@@ -39,7 +39,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # 컬럼 나누기
-col1, col2 = st.columns([2, 3])
+col1, col2 = st.columns([3, 4])
 with col1:
     with st.container():
         st.image("image/파이차트.png", use_column_width=True)
