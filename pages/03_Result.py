@@ -39,7 +39,7 @@ hide_streamlit_style = """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # 컬럼 나누기
-col1, col2 = st.columns([4, 3])
+col1, col2 = st.columns([6, 4])
 with col1:
     with st.container():
         st.image("image/파이차트.png", use_column_width=True)
@@ -49,7 +49,7 @@ with col2:
     with st.container():
         st.write(
             """
-            ### 가설 1: 가설 1: 인구 수, 소득, 사업용 전기차 수 등의 요인으로 경제 활동을 중심으로 하는 자치구에 전기차 충전기를 설치하는 것이 더 효율적  
+            ### 가설 1: 인구 수, 소득, 사업용 전기차 수 등의 요인으로 경제 활동을 중심으로 하는 자치구에 전기차 충전기를 설치하는 것이 더 효율적  
 
         """
         )
