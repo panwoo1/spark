@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="상관관계 분석석", page_icon="📈", layout="wide")
+st.set_page_config(page_title="상관관계 분석", page_icon="📈", layout="wide")
 hide_streamlit_style = """
             <style>
             [data-testid="stToolbar"] {visibility: hidden !important;}
