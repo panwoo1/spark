@@ -1,42 +1,42 @@
 import streamlit as st
 
 st.set_page_config(page_title="상관관계 분석", page_icon="📈", layout="wide")
-hide_streamlit_style = """
-            <style>
-            [data-testid="stToolbar"] {visibility: hidden !important;}
-            footer {visibility: hidden !important;}
-                    body {
-          margin: 0;
-        }
+# hide_streamlit_style = """
+#             <style>
+#             [data-testid="stToolbar"] {visibility: hidden !important;}
+#             footer {visibility: hidden !important;}
+#                     body {
+#           margin: 0;
+#         }
 
-        .wrapper {
-          position: relative;
-          z-index: 1;
-          display: inline-block;
-          width: 100vw;
-        }
+#         .wrapper {
+#           position: relative;
+#           z-index: 1;
+#           display: inline-block;
+#           width: 100vw;
+#         }
 
-        .hidefooter {
-          position: absolute;
-          width: 150px;
-          height: 35px;
-          background: rgb(242,240,246);
-          right: 0px;
-          bottom: 0px;
-          z-index: 2;
-          display: block;
-          color: rgb(0, 0, 0);
-        }
-    
-        iframe {
-          display: block;
-          background: #ffffff;
-          border: none;
-          height: 99vh;
-          width: 99vw;
-        }
-            """
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+#         .hidefooter {
+#           position: absolute;
+#           width: 150px;
+#           height: 35px;
+#           background: rgb(242,240,246);
+#           right: 0px;
+#           bottom: 0px;
+#           z-index: 2;
+#           display: block;
+#           color: rgb(0, 0, 0);
+#         }
+
+#         iframe {
+#           display: block;
+#           background: #ffffff;
+#           border: none;
+#           height: 99vh;
+#           width: 99vw;
+#         }
+#             """
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # 컬럼 나누기
 col1, col2 = st.columns([2, 3])
