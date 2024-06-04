@@ -11,12 +11,12 @@ from streamlit_folium import folium_static
 st.set_page_config(
     page_title="전기차 충전기 점유율 히트맵", page_icon="🚗", layout="wide"
 )
-# hide_streamlit_style = """
-#             <style>
-#             [data-testid="stToolbar"] {visibility: hidden !important;}
-#             footer {visibility: hidden !important;}
-#             """
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 FASTAPI_URL = "http://127.0.0.1:8000/chargers/"
 occupancy_html_path = "occupancy_heatmap.html"
