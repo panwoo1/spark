@@ -71,5 +71,13 @@ with col3:
 with col4:
     st.image("image/주차장확보율.png", use_column_width=True)
 
+col6 = st.column(1)
+with col6:
+    st.write(
+        """
+  혼합형 지역은 예상과 다르게 상업지역보다 상대적으로 주거지역의 비율이 훨씬 높다.  
+  이에 따라, 아파트 중심으로 충전 인프라를 보급해야하지만,  k-apt 정보를 토대로 혼합형 지역은 노후 아파트 비율이 높아 주차장 확보율이 낮아 현실적으로 설치가 어렵습니다
+  """
+    )
 
 st.write("---")
