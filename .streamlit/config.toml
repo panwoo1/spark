@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#1f77b4"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#000000"
+font = "sans serif"
+
+[ui]
+# Hide all Streamlit branding and hamburger menu
+hideStreamlitLogo = true
+hideSidebarNav = true
+
+# Hide all but the light/dark mode toggle in the user menu
+customTheme = true
