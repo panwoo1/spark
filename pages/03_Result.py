@@ -93,3 +93,13 @@ st.write(
     ##### 최종 결론: 앞선 가설들을 바탕으로 경제활동을 중심으로 하는 주간형 지역에 충전 인프라를 설치해야 한다.
          """
 )
+st.write("---")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.image("image/직장인_선호도.png", use_column_width=True)
+with col2:
+    st.image("image/통행사슬.png", use_column_width=True)
+with col3:
+    st.image("image/통행사슬_종사자.png", use_column_width=True)
