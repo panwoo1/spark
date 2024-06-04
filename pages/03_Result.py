@@ -70,14 +70,14 @@ with col1:
         )
 st.write("---")
 
-col1, col2 = st.columns(2)
-with col1:
-    st.image("image/주거면적_산업면적.png", use_column_width=True)
+col2, col3 = st.columns(2)
 with col2:
+    st.image("image/주거면적_산업면적.png", use_column_width=True)
+with col3:
     st.image("image/유형별_면적대비_아파트수.png", use_column_width=True)
 
-col3, col4 = st.columns(2)
-with col3:
-    st.image("image/유형별_노후_아파트_비율.png", use_column_width=True)
+col4, col5 = st.columns(2)
 with col4:
+    st.image("image/유형별_노후_아파트_비율.png", use_column_width=True)
+with col5:
     st.image("image/주차장확보율.png", use_column_width=True)
