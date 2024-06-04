@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(page_title="상관관계 분석석", page_icon="📈", layout="wide")
+st.set_page_config(page_title="분석 결론", page_icon="✅", layout="wide")
 hide_streamlit_style = """
             <style>
             [data-testid="stToolbar"] {visibility: hidden !important;}
@@ -59,21 +59,25 @@ with col2:
 
 st.write("---")
 
-col1, col2 = st.columns([3, 4])
-with col1:
-    with st.container():
-        st.image("image/주거면적_산업면적.png", use_column_width=True)
-        st.image("image/유형별_면적대비_아파트수.png", use_column_width=True)
-        st.image("image/유형별_노후_아파트_비율.png", use_column_width=True)
-        st.image("image/주차장확보율.png", use_column_width=True)
+col1 = st.columns(1)
 
-with col2:
+with col1:
     with st.container():
         st.write(
             """
-            ##### 가설 2: 혼합형 지역은 주거 지역, 일자리 등 다양한 용도로 사용될 수 있다. 이에 따라, 전기차 충전기 사용량이  
-            많을 것으로 예상되며, 우선적으로 전기차 충전기를 설치해야 한다.
+            ##### 가설 2: 혼합형 지역은 주거 지역, 일자리 등 다양한 용도로 사용될 수 있다. 이에 따라, 전기차 충전기 사용량이 많을 것으로 예상되며, 우선적으로 전기차 충전기를 설치해야 한다.
         """
         )
-
 st.write("---")
+
+col1, col2 = st.columns(2)
+with col1:
+    st.image("image/주거면적_산업면적.png", use_column_width=True)
+with col2:
+    st.image("image/유형별_면적대비_아파트수.png", use_column_width=True)
+
+col3, col4 = st.columns(2)
+with col3:
+    st.image("image/유형별_노후_아파트_비율.png", use_column_width=True)
+with col4:
+    st.image("image/주차장확보율.png", use_column_width=True)
