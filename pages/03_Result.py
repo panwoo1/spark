@@ -59,7 +59,7 @@ with col2:
 
 st.write("---")
 
-col1, col2 = st.columns([2, 1])  # Adjust the ratio as needed
+col1, col2 = st.columns([3, 4])  # Adjust the ratio as needed
 
 # Place images in pairs in the first column
 with col1:
