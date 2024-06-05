@@ -115,7 +115,7 @@ st.write(
     """
 )
 st.write("---")
-col1 = st.columns()
+col1 = st.columns(1)
 with col1:
     st.image("image/아파트_회사_충전기현황.png", use_column_width=True)
 
