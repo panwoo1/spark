@@ -120,7 +120,6 @@ def load_heatmap(html_file):
     components.html(source_code, height=600, width=800)
 
 
-@st.cache_data()
 def main():
     if not os.path.exists(occupancy_html_path) and not os.path.exists(
         charging_html_path
