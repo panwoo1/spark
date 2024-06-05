@@ -115,9 +115,7 @@ st.write(
     """
 )
 st.write("---")
-col1 = st.columns(1)
-with col1:
-    st.image("image/아파트_회사_충전기현황.png", use_column_width=True)
+st.image("image/아파트_회사_충전기현황.png", use_column_width=True)
 
 st.write("""
          - 강남구는 IT 기업과 스타트업이 많이 모여 있으며, 서울특별시 지역내총생산 1위 지역입니다.  
